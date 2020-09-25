@@ -40,9 +40,9 @@ class school
 }
 class Primary extends school
 {
-  constructor(name,level,no,pickup)
+  constructor(name,no,pickup)
   {
-    super(name,level,no);
+    super(name,"primary",no);
     this.pickup=pickup;
   }
   get pickuppolicy()
@@ -62,7 +62,7 @@ class HighSchool extends school
     console.log(this.sportsTeams);
   }
 }
-const lorraineHansbury=new Primary('Lorraine Hansbury','primary',514,'Students must be picked up by a parent, guardian, or a family member over the age of 13.');
+const lorraineHansbury=new Primary('Lorraine Hansbury',514,'Students must be picked up by a parent, guardian, or a family member over the age of 13.');
 lorraineHansbury.quickfacts();
 console.log(lorraineHansbury.pickSubstituteTeacher(['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginobli']));
 const alSmith=new HighSchool('Al E. Smith','high',415,['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
